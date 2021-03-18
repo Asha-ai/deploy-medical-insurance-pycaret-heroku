@@ -5,9 +5,9 @@ gunicorn==19.9.0
 certifi==2019.11.28
 itsdangerous==1.1.0
 pathy == 0.4.0
-nltk==3.5
-RUN python -c "import nltk;nltk.download('wordnet')"
-RUN python -c "import nltk;nltk.download('pros_cons')"
-RUN python -c "import nltk;nltk.download('reuters')"
-
+nltk==3.5.0
+textblob
+wordnet
+pros_cons
+reuters
 
