@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <h3>Business Problem - Predict Insurance Bill </h3>
+  <h5>An insurance company wants to improve its cash flow forecasting by better predicting patient charges using demographic and basic patient health risk metrics at the time of hospitalization.</h5>
+   
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+  
+</head>
+<p> </p>
+<body>
+ <div class="login">
+	
+    <!-- Form to enter new data for predictions  -->
+    <form action="{{ url_for('predict')}}"method="POST">
+      <input type="text" name="age" placeholder="Age" required="required" /><br>
+    	<input type="text" name="sex" placeholder="Sex" required="required" /><br>
+        <input type="text" name="bmi" placeholder="BMI" required="required" /><br>
+        <input type="text" name="children" placeholder="Children" required="required" /><br>
+        <input type="text" name="smoker" placeholder="Smoker" required="required" /><br>
+        <input type="text" name="region" placeholder="Region" required="required" /><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+	  <h5>Region trained : notheast, northwest, southeast, southwest and BMI calulator link:<a href = "https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/ style="color: white">BMI calculator help</a></h5>
+
+	
+	<h5>Data usedfrom Kaggle: <a href="https://www.kaggle.com/mirichoi0218/insurance#insurance.csv" style="color: white" >data taken from kaggle</a></h4>
+		<h4>About Me</h5>	
+	<h5>My linked in profile:	<a href = "https://www.linkedin.com/in/ashaponnadaai style="color: white ">my profile @linkedin</a> </h5>
+	<h4>Author @KD NUggets:	<a href = "https://www.kdnuggets.com/2020/09/machine-learning-model-deployment.html style="color: red ">Me @KD Nuggets</a> </h4>
+	<h4>Github Link:<a href = "https://github.com/Asha-ai style="color: white ">My Github Link</a> </h4>
+	<h4>Author@Analytics Vidhya: <a href = "https://www.analyticsvidhya.com/blog/author/asha05/ style="color: white " >My Blogs @Analytics Vidhya</a></h4>
+	<h4>Author @Medium :  <a href = "https://ashaicy99.medium.com/  style="color: white" >Author @Medium</a></h4>
+	<h4>Me@Azure ML Gallery : <a href = "https://gallery.azure.ai/Experiment/Telecom-Churn-Prediction-2 style="color: white">Me@AzureML Gallery</a> </h4>
+	<h4>My Chatbot project : <a href = "https://axleweb.tech/chatbotx?project=sandwich-maker-itwvfb style="color: white">Education and Training chatbot</a></h4>
+		
+   <br>
+   <br>
+     
+ </div>
+
+ <p style="background-color:tomato;">Amount could be :  {{pred}} </p>
+
+
+</body>
+</html>
