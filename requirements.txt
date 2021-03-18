@@ -5,5 +5,5 @@ gunicorn==19.9.0
 certifi==2019.11.28
 itsdangerous==1.1.0
 pathy == 0.4.0
-nltk.txt
+
 
