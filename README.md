@@ -8,6 +8,9 @@ An insurance company wants to improve its cash flow forecasting by better predic
 #### Run flask file through command prompt - open command prompt in the same folder / set path
 python app.py
 
+![Capture1](https://user-images.githubusercontent.com/66937023/111591545-9a42cc80-87ed-11eb-8c7f-dafb87f7be22.PNG)
+
+
 #### Run the model in the local system
 http://127.0.0.1:5000/
 #### output 
